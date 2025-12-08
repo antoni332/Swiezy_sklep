@@ -1,0 +1,9 @@
+.value-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--bs-success);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 123, 69, 0.1);
+}

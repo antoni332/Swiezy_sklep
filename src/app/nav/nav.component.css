@@ -1,0 +1,15 @@
+.navbar-brand svg {
+  width: 24px;
+  height: 24px;
+}
+.brand-text {
+  line-height: 1.1;
+}
+.brand-title {
+  font-weight: 600;
+  color: #212529;
+}
+.brand-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+}

@@ -1,0 +1,31 @@
+<section class="hero-section text-center text-white py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Witaj w Świeżym Sklepiku!</h1>
+    <p class="lead mb-4">
+      Codziennie świeże produkty od lokalnych dostawców. Pieczywo, owoce,
+      warzywa i wiele więcej.
+    </p>
+
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a class="btn btn-light btn-lg" routerLink="/products">
+        <i class="bi bi-basket me-2"></i>Zobacz produkty
+      </a>
+
+      <a class="btn btn-outline-light btn-lg" routerLink="/contact">
+        <i class="bi bi-envelope me-2"></i>Skontaktuj się
+      </a>
+    </div>
+
+    <div class="row mt-5 text-start">
+      <div class="col-md-4 mb-3" *ngFor="let item of values">
+        <div class="d-flex align-items-start">
+          <i class="{{ item.icon }} fs-3 me-3"></i>
+          <div>
+            <h5 class="mb-1">{{ item.title }}</h5>
+            <p class="mb-0 opacity-75">{{ item.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
