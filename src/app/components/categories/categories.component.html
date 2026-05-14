@@ -8,11 +8,11 @@
     <div class="row g-4">
       <div class="col-md-4" *ngFor="let category of categories">
         <div class="card h-100 border-0 shadow-sm">
-          <img [src]="category.img" class="card-img-top" [alt]="category.title" />
+          <img [src]="category.image" class="card-img-top" [alt]="category.title" />
           <div class="card-body text-center">
             <i class="{{ category.icon }} fs-1 text-primary mb-3 d-block"></i>
             <h4 class="card-title">{{ category.title }}</h4>
-            <p class="card-text text-muted">{{ category.text }}</p>
+            <p class="card-text text-muted">{{ category.description }}</p>
             <a class="btn btn-outline-primary" routerLink="/products">Zobacz produkty</a>
           </div>
         </div>

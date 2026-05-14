@@ -1,27 +1,19 @@
 import { Component } from '@angular/core';
-import { NavComponent } from './nav/nav.component';
-import { HeroComponent } from './hero/hero.component';
-import { CategoriesComponent } from './categories/categories.component';
-import { WhyUsComponent } from './why-us/why-us.component';
-import { CtaComponent } from './cta/cta.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutPreviewComponent } from "./about-preview/about-preview.component";
+import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
+import {RouterOutlet} from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
   imports: [
     NavComponent,
-    HeroComponent,
-    CategoriesComponent,
-    WhyUsComponent,
-    CtaComponent,
     FooterComponent,
-    AboutPreviewComponent
-],
+    RouterOutlet
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'shopApp';
+  title = 'Świeży Sklepik';
 }
